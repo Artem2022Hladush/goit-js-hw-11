@@ -4,9 +4,9 @@ const API_URL = 'https://pixabay.com/api/';
 
 export default class ImagesApiService {
 	constructor() {
-   this.searchQuery = " ";
-   this.page = 1;
-   this.per_page = 40;
+   	this.searchQuery = "";
+   	this.page = 1;
+   	this.per_page = 40;
 	};
 
 	async fetchImages() {
@@ -22,8 +22,8 @@ export default class ImagesApiService {
    	const url = `${API_URL}?${options}`;
    	const response = await Axios.get(url);
    	this.totalHits = response.data.totalHits;
-		console.log(this.totalHits);
    	return response.data.hits;
+
 	}
 
 	incrementPage() {
@@ -39,4 +39,4 @@ export default class ImagesApiService {
 	set query(newQuery) {
    	this.searchQuery = newQuery;
 	}
-};
+}

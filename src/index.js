@@ -3,7 +3,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio'; 
 import { renderMurkup } from './js/render-images-murkup';
-import ImagesApiService from './js/API-servis';
+import ImagesApiService from './js/api-servis';
 import LoadMoreBtn from './js/load-btn';
 
 const ImagesApi = new ImagesApiService();
